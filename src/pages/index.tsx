@@ -44,17 +44,32 @@ const Home: NextPage<HomeProps> = (props) => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <header className="max-w-[1440px] px-[13rem]">
+        <header className="max-w-[1440px] px-4 sm:px-[13rem] mx-auto">
           <Navigation />
           <Hero />
         </header>
       </div>
-      <div className="max-w-[1440px] px-[13rem] py-[7.875rem]">
+      <div className="max-w-[1440px] py-16 px-4 sm:px-[13rem] sm:py-[7.875rem] mx-auto">
         <h2 className="text-[#333456] font-semibold text-4xl leading-none">Popular Destination</h2>
         <div className="bg-[#7E8EE3] h-1 w-1/12 mt-2" />
-        <div className="mt-12 grid grid-cols-3 gap-6">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
           {props.articleData.map((article, index) => {
             if (index > 2) {
+              return null;
+            }
+            return <Card key={index} articleData={article}/>
+          })}
+        </div>
+      </div>
+      <div className="max-w-[1440px] py-16 px-4 sm:px-[13rem] sm:py-[7.875rem] mx-auto">
+        <h2 className="text-[#333456] font-semibold text-4xl leading-none">Popular Destination</h2>
+        <div className="bg-[#7E8EE3] h-1 w-1/12 mt-2" />
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {props.articleData.map((article, index) => {
+            if (index < 1) {
+              return null;
+            }
+            if (index > 6) {
               return null;
             }
             return <Card key={index} articleData={article}/>
