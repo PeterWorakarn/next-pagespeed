@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
+import dynamic from 'next/dynamic';
 import Head from 'next/head'
-import Card from '../components/Card'
 import styles from '../styles/Home.module.css'
+
+const Card = dynamic(import('../components/Card'), {ssr: true});
 
 export async function getStaticProps() {
   const res = await fetch('https://fakestoreapi.com/products/category/jewelery')
