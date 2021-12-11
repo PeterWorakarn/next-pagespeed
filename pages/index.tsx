@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Card from '../components/card'
+import Card from '../components/Card'
 import styles from '../styles/Home.module.css'
 
 export async function getStaticProps() {
