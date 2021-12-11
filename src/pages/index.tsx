@@ -36,7 +36,7 @@ interface HomeProps {
 }
 const Home: NextPage<HomeProps> = (props) => {
   return (
-    <>
+    <div className="hidden lg:block">
       <div className="cover-image font-sans">
         <Head>
           <title>Create Next App</title>
@@ -61,7 +61,7 @@ const Home: NextPage<HomeProps> = (props) => {
           })}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
