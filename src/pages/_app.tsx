@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     if (typeof window !== "undefined") {
       // Client-side-only code
-      window.scrollTo(0,1);
+      window.scrollTo(0,10);
     }
   }, []);
   return <Component {...pageProps} />
