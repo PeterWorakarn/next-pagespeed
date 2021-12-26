@@ -8,8 +8,8 @@
     "productivity",
     "utilities"
   ],
-  "start_url": "/?standalone=true",
-  "display": "standalone",
+  "start_url": "/?fullscreen=true",
+  "display": "fullscreen",
   "background_color": "#90cdf4",
   "theme_color": "#90cdf4",
   "orientation": "portrait",
