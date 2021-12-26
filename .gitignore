@@ -18,7 +18,6 @@
 # misc
 .DS_Store
 *.pem
-sw.js.map
 
 # debug
 npm-debug.log*
@@ -36,3 +35,4 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+public/sw.js.map
